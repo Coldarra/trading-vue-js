@@ -4,10 +4,10 @@ This guide version is **1.0.0**
 
 ![npm](https://img.shields.io/npm/v/trading-vue-js.svg?color=brightgreen&label=Current%20lib%20version)
 
-### DataCube API is [here](https://github.com/Coldarra/trading-vue-js/tree/master/docs/datacube/README.zh.md)
-### Inline Shaders API is [here](https://github.com/Coldarra/trading-vue-js/tree/master/docs/api/SHADERS.zh.md)
-### Index-Based mode API is [there](https://github.com/Coldarra/trading-vue-js/tree/master/docs/api/IB.zh.md)
-### Std-lib for scripts API is [over there](https://github.com/Coldarra/trading-vue-js/tree/master/docs/api/STDLIB.zh.md)
+### DataCube API is [here](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/datacube/README.zh.md)
+### Inline Shaders API is [here](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api/SHADERS.zh.md)
+### Index-Based mode API is [there](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api/IB.zh.md)
+### Std-lib for scripts API is [over there](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api/STDLIB.zh.md)
 
 ## Props
 
@@ -129,7 +129,7 @@ Goto to a specific timestamp
 
 ### getCursor()
 
-Gets the cursor [object](https://github.com/Coldarra/trading-vue-js/tree/master/docs/api/README.zh.md#cursor-data)
+Gets the cursor [object](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api/README.zh.md#cursor-data)
 
 * **Returns**: Object
 
@@ -144,7 +144,7 @@ Shows a pop-up with specified text.
 ### $refs.chart.hooks(...args)
 
 Set hooks to the internal events. You'll get events like this `?<hook name>`
-设置内部事件hook。你会得到``?<hook name>`这样的事件
+设置内部事件hook。你会得到`?<hook name>`这样的事件
 
 * **Arguments**: ...args (Strings) hook names
 
@@ -370,7 +370,7 @@ Defined in `layout.js`, accessed through overlay's `this.$props.layout`.
 | $_hi    | Number | Upper bound of price-range                                                                                                                               |
 | $_lo    | Number | Lower bound of price-range                                                                                                                               |
 | $_step  | Number | Grid price step                                                                                                                                          |
-| $_mult  | Number | Grid price multipler ([log-scale mode](https://github.com/Coldarra/trading-vue-js/tree/master/docs/faq/README.zh.md#log-scale-no))                       |
+| $_mult  | Number | Grid price multipler ([log-scale mode](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/faq/README.zh.md#log-scale-no))                       |
 | t_step  | Number | Grid time step                                                                                                                                           |
 | A       | Number | Scale transform coefficient                                                                                                                              |
 | B       | Number | Offset transform coefficient                                                                                                                             |
@@ -383,7 +383,7 @@ Defined in `layout.js`, accessed through overlay's `this.$props.layout`.
 | sb      | Number | Sidebar width                                                                                                                                            |
 | spacex  | Number | Drawing area width (px)                                                                                                                                  |
 | startx  | Number | First candle position (px)                                                                                                                               |
-| ti_map  | Object | Time-index mapping for [IB mode](https://github.com/Coldarra/trading-vue-js/tree/master/docs/faq/README.zh.md#what-is-the-index-based-ib-rendering-mode) |
+| ti_map  | Object | Time-index mapping for [IB mode](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/faq/README.zh.md#what-is-the-index-based-ib-rendering-mode) |
 | candles | Array  | Candles subset                                                                                                                                           |
 | volume  | Array  | Volume bars positions and sizes                                                                                                                          |
 | xs      | Array  | vertical grid lines `[[x, candle], ...]`                                                                                                                 |

@@ -318,13 +318,15 @@ Used in RSI</p>
 ## ts(x) ⇒ <code>TS</code>
 Creates a new time-series & records each x.
 Returns  an array. Id is auto-genrated
+创建新的时间序列并记录每个x坐标。
+返回一个数组。Id自动生成。
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>\*</code> | A variable to sample from |
+| Param | Type            | Description               |
+| ----- | --------------- | ------------------------- |
+| x     | <code>\*</code> | A variable to sample from |
 
 <a name="tstf"></a>
 
@@ -332,180 +334,196 @@ Returns  an array. Id is auto-genrated
 Creates a new time-series & records each x.
 Uses Sampler to aggregate the values
 Return the an array. Id is auto-genrated
+创建新的时间序列并记录每个x坐标。
+使用采样器聚合值。
+返回一个数组。Id自动生成。
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>\*</code> | A variable to sample from |
-| tf | <code>number</code> \| <code>string</code> | Timeframe in ms or as a string |
+| Param | Type                                       | Description                    |
+| ----- | ------------------------------------------ | ------------------------------ |
+| x     | <code>\*</code>                            | A variable to sample from      |
+| tf    | <code>number</code> \| <code>string</code> | Timeframe in ms or as a string |
 
 <a name="nz"></a>
 
 ## nz(x, [v]) ⇒ <code>\*</code>
 Replaces the variable if it's NaN
+如果变量为NaN，则替换该变量
 
 **Kind**: global function
 **Returns**: <code>\*</code> - - New value
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>\*</code> | The variable |
-| [v] | <code>\*</code> | A value to replace with |
+| Param | Type            | Description             |
+| ----- | --------------- | ----------------------- |
+| x     | <code>\*</code> | The variable            |
+| [v]   | <code>\*</code> | A value to replace with |
 
 <a name="na"></a>
 
 ## na(x) ⇒ <code>boolean</code>
 Is the variable NaN ?
+判断变量是否为NaN
 
 **Kind**: global function
 **Returns**: <code>boolean</code> - - New value
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>\*</code> | The variable |
+| Param | Type            | Description  |
+| ----- | --------------- | ------------ |
+| x     | <code>\*</code> | The variable |
 
 <a name="nf"></a>
 
 ## nf(x, [v]) ⇒ <code>\*</code>
 Replaces the var with NaN if Infinite
+如果该变量无穷大，则用NaN替换
 
 **Kind**: global function
 **Returns**: <code>\*</code> - - New value
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>\*</code> | The variable |
-| [v] | <code>\*</code> | A value to replace with |
+| Param | Type            | Description             |
+| ----- | --------------- | ----------------------- |
+| x     | <code>\*</code> | The variable            |
+| [v]   | <code>\*</code> | A value to replace with |
 
 <a name="add"></a>
 
 ## add(x, y) ⇒ <code>TS</code>
 Adds values / time-series
+添加值/时间序列
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>TS</code> \| <code>\*</code> | First input |
-| y | <code>TS</code> \| <code>\*</code> | Second input |
+| Param | Type                               | Description  |
+| ----- | ---------------------------------- | ------------ |
+| x     | <code>TS</code> \| <code>\*</code> | First input  |
+| y     | <code>TS</code> \| <code>\*</code> | Second input |
 
 <a name="sub"></a>
 
 ## sub(x, y) ⇒ <code>TS</code>
 Subtracts values / time-series
+减去值/时间序列
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>TS</code> \| <code>\*</code> | First input |
-| y | <code>TS</code> \| <code>\*</code> | Second input |
+| Param | Type                               | Description  |
+| ----- | ---------------------------------- | ------------ |
+| x     | <code>TS</code> \| <code>\*</code> | First input  |
+| y     | <code>TS</code> \| <code>\*</code> | Second input |
 
 <a name="mult"></a>
 
 ## mult(x, y) ⇒ <code>TS</code>
 Multiplies values / time-series
+乘以值/时间序列
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>TS</code> \| <code>\*</code> | First input |
-| y | <code>TS</code> \| <code>\*</code> | Second input |
+| Param | Type                               | Description  |
+| ----- | ---------------------------------- | ------------ |
+| x     | <code>TS</code> \| <code>\*</code> | First input  |
+| y     | <code>TS</code> \| <code>\*</code> | Second input |
 
 <a name="div"></a>
 
 ## div(x, y) ⇒ <code>TS</code>
 Divides values / time-series
+除以值/时间序列
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>TS</code> \| <code>\*</code> | First input |
-| y | <code>TS</code> \| <code>\*</code> | Second input |
+| Param | Type                               | Description  |
+| ----- | ---------------------------------- | ------------ |
+| x     | <code>TS</code> \| <code>\*</code> | First input  |
+| y     | <code>TS</code> \| <code>\*</code> | Second input |
 
 <a name="neg"></a>
 
 ## neg(x) ⇒ <code>TS</code>
 Returns a negative value / time-series
+返回负的值/时间序列
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>TS</code> \| <code>\*</code> | Input |
+| Param | Type                               | Description |
+| ----- | ---------------------------------- | ----------- |
+| x     | <code>TS</code> \| <code>\*</code> | Input       |
 
 <a name="abs"></a>
 
 ## abs(x) ⇒ <code>number</code>
 Absolute value
+绝对值
 
 **Kind**: global function
 **Returns**: <code>number</code> - - Absolute value
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Input |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| x     | <code>number</code> | Input       |
 
 <a name="acos"></a>
 
 ## acos(x) ⇒ <code>number</code>
 Arccosine function
+反余弦函数
 
 **Kind**: global function
 **Returns**: <code>number</code> - - Arccosine of x
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Input |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| x     | <code>number</code> | Input       |
 
 <a name="signal"></a>
 
 ## signal(type, data)
 Emits an event to DataCube
+向DataCube发出事件
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| type | <code>string</code> | Signal type |
-| data | <code>\*</code> | Signal data |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| type  | <code>string</code> | Signal type |
+| data  | <code>\*</code>     | Signal data |
 
 <a name="signalif"></a>
 
 ## signalif(cond, type, data)
 Emits an event if cond === true
+如果cond===true，则发出事件
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| cond | <code>boolean</code> \| <code>TS</code> | The condition |
-| type | <code>string</code> | Signal type |
-| data | <code>\*</code> | Signal data |
+| Param | Type                                    | Description   |
+| ----- | --------------------------------------- | ------------- |
+| cond  | <code>boolean</code> \| <code>TS</code> | The condition |
+| type  | <code>string</code>                     | Signal type   |
+| data  | <code>\*</code>                         | Signal data   |
 
 <a name="alma"></a>
 
 ## alma(src, len, offset, sigma) ⇒ <code>TS</code>
 Arnaud Legoux Moving Average
+移动平均线
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
-| offset | <code>number</code> | Offset |
-| sigma | <code>number</code> | Sigma |
+| Param  | Type                | Description |
+| ------ | ------------------- | ----------- |
+| src    | <code>TS</code>     | Input       |
+| len    | <code>number</code> | Length      |
+| offset | <code>number</code> | Offset      |
+| sigma  | <code>number</code> | Sigma       |
 
 <a name="asin"></a>
 
@@ -515,9 +533,9 @@ Arcsine function
 **Kind**: global function
 **Returns**: <code>number</code> - - Arcsine of x
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Input |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| x     | <code>number</code> | Input       |
 
 <a name="atan"></a>
 
@@ -527,57 +545,61 @@ Arctangent function
 **Kind**: global function
 **Returns**: <code>number</code> - - Arctangent of x
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Input |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| x     | <code>number</code> | Input       |
 
 <a name="atr"></a>
 
 ## atr(len) ⇒ <code>TS</code>
 Average True Range
+ATR
 
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| len   | <code>number</code> | Length      |
 
 <a name="avg"></a>
 
 ## avg(...args) ⇒ <code>number</code>
 Average of arguments
+参数平均值
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param   | Type                | Description    |
+| ------- | ------------------- | -------------- |
 | ...args | <code>number</code> | Numeric values |
 
 <a name="since"></a>
 
 ## since(cond)
 Candles since the event occured (cond === true)
+事件发生后的K线柱子（cond===true）
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| cond | <code>boolean</code> \| <code>TS</code> | the condition |
+| Param | Type                                    | Description   |
+| ----- | --------------------------------------- | ------------- |
+| cond  | <code>boolean</code> \| <code>TS</code> | the condition |
 
 <a name="bb"></a>
 
 ## bb(src, len, mult) ⇒ <code>Array.&lt;TS&gt;</code>
 Bollinger Bands
+布林带
 
 **Kind**: global function
 **Returns**: <code>Array.&lt;TS&gt;</code> - - Array of new time-series (3 bands)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
-| mult | <code>number</code> | Multiplier |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
+| mult  | <code>number</code> | Multiplier  |
 
 <a name="bbw"></a>
 
@@ -587,22 +609,23 @@ Bollinger Bands Width
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
-| mult | <code>number</code> | Multiplier |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
+| mult  | <code>number</code> | Multiplier  |
 
 <a name="bool"></a>
 
 ## bool(x) ⇒ <code>number</code>
 Converts the variable to Boolean
+将变量转换为布尔值
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="cci"></a>
 
@@ -612,10 +635,10 @@ Commodity Channel Index
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="ceil"></a>
 
@@ -624,9 +647,9 @@ Shortcut for Math.ceil()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="change"></a>
 
@@ -636,10 +659,10 @@ Change: x[0] - x[len]
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| src | <code>TS</code> |  | Input |
-| [len] | <code>number</code> | <code>1</code> | Length |
+| Param | Type                | Default        | Description |
+| ----- | ------------------- | -------------- | ----------- |
+| src   | <code>TS</code>     |                | Input       |
+| [len] | <code>number</code> | <code>1</code> | Length      |
 
 <a name="cmo"></a>
 
@@ -649,10 +672,10 @@ Chande Momentum Oscillator
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Default        | Description |
+| ----- | ------------------- | -------------- | ----------- |
+| src   | <code>TS</code>     |                | Input       |
+| [len] | <code>number</code> | <code>1</code> | Length      |
 
 <a name="cog"></a>
 
@@ -662,10 +685,10 @@ Center of Gravity
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="cos"></a>
 
@@ -675,9 +698,9 @@ Cosine function
 **Kind**: global function
 **Returns**: <code>number</code> - - Cosine of x
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | Input |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| x     | <code>number</code> | Input       |
 
 <a name="cross"></a>
 
@@ -687,10 +710,10 @@ When one time-series crosses another
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src1 | <code>TS</code> | TS1 |
-| src2 | <code>TS</code> | TS2 |
+| Param | Type            | Description |
+| ----- | --------------- | ----------- |
+| src1  | <code>TS</code> | TS1         |
+| src2  | <code>TS</code> | TS2         |
 
 <a name="crossover"></a>
 
@@ -700,10 +723,10 @@ When one time-series goes over another one
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src1 | <code>TS</code> | TS1 |
-| src2 | <code>TS</code> | TS2 |
+| Param | Type            | Description |
+| ----- | --------------- | ----------- |
+| src1  | <code>TS</code> | TS1         |
+| src2  | <code>TS</code> | TS2         |
 
 <a name="crossunder"></a>
 
@@ -713,10 +736,10 @@ When one time-series goes under another one
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src1 | <code>TS</code> | TS1 |
-| src2 | <code>TS</code> | TS2 |
+| Param | Type            | Description |
+| ----- | --------------- | ----------- |
+| src1  | <code>TS</code> | TS1         |
+| src2  | <code>TS</code> | TS2         |
 
 <a name="cum"></a>
 
@@ -726,9 +749,9 @@ Sum of all elements of src
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src1 | <code>TS</code> | Input |
+| Param | Type            | Description |
+| ----- | --------------- | ----------- |
+| src1  | <code>TS</code> | Input       |
 
 <a name="dayofmonth"></a>
 
@@ -738,8 +761,8 @@ Day of month, literally
 **Kind**: global function
 **Returns**: <code>number</code> - - Day
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                            |
+| ------ | ------------------- | -------------------------------------- |
 | [time] | <code>number</code> | Time in ms (current t, if not defined) |
 
 <a name="dayofweek"></a>
@@ -750,8 +773,8 @@ Day of week, literally
 **Kind**: global function
 **Returns**: <code>number</code> - - Day
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                            |
+| ------ | ------------------- | -------------------------------------- |
 | [time] | <code>number</code> | Time in ms (current t, if not defined) |
 
 <a name="dev"></a>
@@ -762,10 +785,10 @@ Deviation from SMA
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="dmi"></a>
 
@@ -775,10 +798,10 @@ Directional Movement Index ADX, +DI, -DI
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| len | <code>number</code> | Length |
-| smooth | <code>number</code> | Smoothness |
+| Param  | Type                | Description |
+| ------ | ------------------- | ----------- |
+| len    | <code>number</code> | Length      |
+| smooth | <code>number</code> | Smoothness  |
 
 <a name="ema"></a>
 
@@ -788,10 +811,10 @@ Exponential Moving Average with alpha = 2 / (y + 1)
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="exp"></a>
 
@@ -800,9 +823,9 @@ Shortcut for Math.exp()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="falling"></a>
 
@@ -812,10 +835,10 @@ Test if "src" TS is falling for "len" candles
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="fixnan"></a>
 
@@ -825,9 +848,9 @@ previous nearest non-NaN value
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input time-series |
+| Param | Type            | Description       |
+| ----- | --------------- | ----------------- |
+| src   | <code>TS</code> | Input time-series |
 
 <a name="floor"></a>
 
@@ -836,9 +859,9 @@ Shortcut for Math.floor()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="highest"></a>
 
@@ -848,10 +871,10 @@ Highest value for a given number of candles back
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="highestbars"></a>
 
@@ -860,10 +883,10 @@ Highest value offset for a given number of bars back
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="hma"></a>
 
@@ -873,10 +896,10 @@ Hull Moving Average
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="hour"></a>
 
@@ -886,8 +909,8 @@ Returns hours of a given timestamp
 **Kind**: global function
 **Returns**: <code>number</code> - - Hour
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                            |
+| ------ | ------------------- | -------------------------------------- |
 | [time] | <code>number</code> | Time in ms (current t, if not defined) |
 
 <a name="iff"></a>
@@ -897,11 +920,11 @@ Returns x or y depending on the condition
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| cond | <code>boolean</code> \| <code>TS</code> | Condition |
-| x | <code>\*</code> | Frist value |
-| y | <code>\*</code> | Second value |
+| Param | Type                                    | Description  |
+| ----- | --------------------------------------- | ------------ |
+| cond  | <code>boolean</code> \| <code>TS</code> | Condition    |
+| x     | <code>\*</code>                         | Frist value  |
+| y     | <code>\*</code>                         | Second value |
 
 <a name="kc"></a>
 
@@ -911,11 +934,11 @@ Keltner Channels
 **Kind**: global function
 **Returns**: <code>Array.&lt;TS&gt;</code> - - Array of new time-series (3 bands)
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| src | <code>TS</code> |  | Input |
-| len | <code>number</code> |  | Length |
-| mult | <code>number</code> |  | Multiplier |
+| Param    | Type                 | Default           | Description    |
+| -------- | -------------------- | ----------------- | -------------- |
+| src      | <code>TS</code>      |                   | Input          |
+| len      | <code>number</code>  |                   | Length         |
+| mult     | <code>number</code>  |                   | Multiplier     |
 | [use_tr] | <code>boolean</code> | <code>true</code> | Use true range |
 
 <a name="kcw"></a>
@@ -926,11 +949,11 @@ Keltner Channels Width
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| src | <code>TS</code> |  | Input |
-| len | <code>number</code> |  | Length |
-| mult | <code>number</code> |  | Multiplier |
+| Param    | Type                 | Default           | Description    |
+| -------- | -------------------- | ----------------- | -------------- |
+| src      | <code>TS</code>      |                   | Input          |
+| len      | <code>number</code>  |                   | Length         |
+| mult     | <code>number</code>  |                   | Multiplier     |
 | [use_tr] | <code>boolean</code> | <code>true</code> | Use true range |
 
 <a name="linreg"></a>
@@ -941,11 +964,11 @@ Linear Regression
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| src | <code>TS</code> |  | Input |
-| len | <code>number</code> |  | Length |
-| offset | <code>number</code> | <code>0</code> | Offset |
+| Param  | Type                | Default        | Description |
+| ------ | ------------------- | -------------- | ----------- |
+| src    | <code>TS</code>     |                | Input       |
+| len    | <code>number</code> |                | Length      |
+| offset | <code>number</code> | <code>0</code> | Offset      |
 
 <a name="log"></a>
 
@@ -954,9 +977,9 @@ Shortcut for Math.log()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="log10"></a>
 
@@ -965,9 +988,9 @@ Shortcut for Math.log10()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="lowest"></a>
 
@@ -977,10 +1000,10 @@ Lowest value for a given number of candles back
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="lowestbars"></a>
 
@@ -989,10 +1012,10 @@ Lowest value offset for a given number of bars back
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="macd"></a>
 
@@ -1002,12 +1025,12 @@ Moving Average Convergence/Divergence
 **Kind**: global function
 **Returns**: <code>Array.&lt;TS&gt;</code> - - [macd, signal, hist]
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| fast | <code>number</code> | Fast EMA |
-| slow | <code>number</code> | Slow EMA |
-| sig | <code>number</code> | Signal |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| fast  | <code>number</code> | Fast EMA    |
+| slow  | <code>number</code> | Slow EMA    |
+| sig   | <code>number</code> | Signal      |
 
 <a name="max"></a>
 
@@ -1016,8 +1039,8 @@ Max of arguments
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param   | Type                | Description    |
+| ------- | ------------------- | -------------- |
 | ...args | <code>number</code> | Numeric values |
 
 <a name="modify"></a>
@@ -1027,9 +1050,9 @@ Sends update to some overlay / main chart
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| id | <code>string</code> | Overlay id |
+| Param  | Type                | Description              |
+| ------ | ------------------- | ------------------------ |
+| id     | <code>string</code> | Overlay id               |
 | fields | <code>Object</code> | Fields to be overwritten |
 
 <a name="buffsize"></a>
@@ -1040,10 +1063,10 @@ time-series (default = 5, grows on demand)
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | New length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | New length  |
 
 <a name="mfi"></a>
 
@@ -1053,10 +1076,10 @@ Money Flow Index
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | Length      |
 
 <a name="min"></a>
 
@@ -1065,8 +1088,8 @@ Min of arguments
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param   | Type                | Description    |
+| ------- | ------------------- | -------------- |
 | ...args | <code>number</code> | Numeric values |
 
 <a name="minute"></a>
@@ -1077,8 +1100,8 @@ Returns minutes of a given timestamp
 **Kind**: global function
 **Returns**: <code>number</code> - - Hour
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                            |
+| ------ | ------------------- | -------------------------------------- |
 | [time] | <code>number</code> | Time in ms (current t, if not defined) |
 
 <a name="mom"></a>
@@ -1089,10 +1112,10 @@ Momentum
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | Length |
+| Param | Type                                                                                                          | Description |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| src               | <code>TS</code>                             | Input                                           |
+| len               | <code>number</code> | Length                                    |
 
 <a name="month"></a>
 
@@ -1102,8 +1125,8 @@ Month
 **Kind**: global function
 **Returns**: <code>number</code> - - Day
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                            |
+| ------ | ------------------- | -------------------------------------- |
 | [time] | <code>number</code> | Time in ms (current t, if not defined) |
 
 <a name="onchart"></a>
@@ -1114,11 +1137,11 @@ Display data point onchart
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>TS</code> \| <code>Array.&lt;TS&gt;</code> \| <code>\*</code> | Data point / TS / array of TS |
-| [name] | <code>string</code> | Overlay name |
-| [sett] | <code>Object</code> | Object with settings & OV type |
+| Param  | Type                                                                | Description                    |
+| ------ | ------------------------------------------------------------------- | ------------------------------ |
+| x      | <code>TS</code> \| <code>Array.&lt;TS&gt;</code> \| <code>\*</code> | Data point / TS / array of TS  |
+| [name] | <code>string</code>                                                 | Overlay name                   |
+| [sett] | <code>Object</code>                                                 | Object with settings & OV type |
 
 <a name="offchart"></a>
 
@@ -1128,11 +1151,11 @@ Display data point offchart
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>TS</code> \| <code>Array.&lt;TS&gt;</code> \| <code>\*</code> | Data point / TS / array of TS |
-| [name] | <code>string</code> | Overlay name |
-| [sett] | <code>Object</code> | Object with settings & OV type |
+| Param  | Type                                                                | Description                    |
+| ------ | ------------------------------------------------------------------- | ------------------------------ |
+| x      | <code>TS</code> \| <code>Array.&lt;TS&gt;</code> \| <code>\*</code> | Data point / TS / array of TS  |
+| [name] | <code>string</code>                                                 | Overlay name                   |
+| [sett] | <code>Object</code>                                                 | Object with settings & OV type |
 
 <a name="onclose"></a>
 
@@ -1142,9 +1165,9 @@ Returns true when the candle(<tf>) is being closed
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| tf | <code>number</code> \| <code>string</code> | Timeframe in ms or as a string |
+| Param | Type                                       | Description                    |
+| ----- | ------------------------------------------ | ------------------------------ |
+| tf    | <code>number</code> \| <code>string</code> | Timeframe in ms or as a string |
 
 <a name="settings"></a>
 
@@ -1154,9 +1177,9 @@ Sends settings update
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| upd | <code>Object</code> | Settings update (object to merge) |
+| Param | Type                | Description                       |
+| ----- | ------------------- | --------------------------------- |
+| upd   | <code>Object</code> | Settings update (object to merge) |
 
 <a name="offset"></a>
 
@@ -1166,9 +1189,9 @@ Shifts TS left or right by "num" candles
 **Kind**: global function
 **Returns**: <code>TS</code> - - New / existing time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| num | <code>number</code> | Offset measured in candles |
+| Param | Type                | Description                |
+| ----- | ------------------- | -------------------------- |
+| num   | <code>number</code> | Offset measured in candles |
 
 <a name="now"></a>
 
@@ -1186,10 +1209,10 @@ Tip: works best with `offset` function
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| left | <code>number</code> | left threshold, candles |
+| Param | Type                | Description              |
+| ----- | ------------------- | ------------------------ |
+| src   | <code>TS</code>     | Input                    |
+| left  | <code>number</code> | left threshold, candles  |
 | right | <code>number</code> | right threshold, candles |
 
 <a name="pivotlow"></a>
@@ -1201,10 +1224,10 @@ Tip: works best with `offset` function
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| left | <code>number</code> | left threshold, candles |
+| Param | Type                | Description              |
+| ----- | ------------------- | ------------------------ |
+| src   | <code>TS</code>     | Input                    |
+| left  | <code>number</code> | left threshold, candles  |
 | right | <code>number</code> | right threshold, candles |
 
 <a name="pow"></a>
@@ -1214,9 +1237,9 @@ Shortcut for Math.pow()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="rising"></a>
 
@@ -1265,9 +1288,9 @@ Shortcut for Math.round()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="rsi"></a>
 
@@ -1277,10 +1300,10 @@ Relative Strength Index
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>TS</code> | First Input |
-| y | <code>number</code> \| <code>TS</code> | Second Input |
+| Param | Type                                   | Description  |
+| ----- | -------------------------------------- | ------------ |
+| x     | <code>TS</code>                        | First Input  |
+| y     | <code>number</code> \| <code>TS</code> | Second Input |
 
 <a name="sar"></a>
 
@@ -1290,11 +1313,11 @@ Parabolic SAR
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| start | <code>number</code> | Start |
-| inc | <code>number</code> | Increment |
-| max | <code>number</code> | Maximum |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| start | <code>number</code> | Start       |
+| inc   | <code>number</code> | Increment   |
+| max   | <code>number</code> | Maximum     |
 
 <a name="second"></a>
 
@@ -1304,8 +1327,8 @@ Returns seconds of a given timestamp
 **Kind**: global function
 **Returns**: <code>number</code> - - Hour
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                            |
+| ------ | ------------------- | -------------------------------------- |
 | [time] | <code>number</code> | Time in ms (current t, if not defined) |
 
 <a name="sign"></a>
@@ -1315,9 +1338,9 @@ Shortcut for Math.sing()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="sin"></a>
 
@@ -1326,9 +1349,9 @@ Sine function
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="sma"></a>
 
@@ -1350,9 +1373,9 @@ Shortcut for Math.sqrt()
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="stdev"></a>
 
@@ -1375,12 +1398,12 @@ Stochastic
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| high | <code>TS</code> | TS of high |
-| low | <code>TS</code> | TS of low |
-| len | <code>number</code> | Length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| high  | <code>TS</code>     | TS of high  |
+| low   | <code>TS</code>     | TS of low   |
+| len   | <code>number</code> | Length      |
 
 <a name="sum"></a>
 
@@ -1403,10 +1426,10 @@ Supertrend Indicator
 **Kind**: global function
 **Returns**: <code>Array.&lt;TS&gt;</code> - - Supertrend line and direction of trend
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description    |
+| ------ | ------------------- | -------------- |
 | factor | <code>number</code> | ATR multiplier |
-| atrlen | <code>number</code> | Length of ATR |
+| atrlen | <code>number</code> | Length of ATR  |
 
 <a name="swma"></a>
 
@@ -1416,9 +1439,9 @@ Symmetrically Weighted Moving Average
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
+| Param | Type            | Description |
+| ----- | --------------- | ----------- |
+| src   | <code>TS</code> | Input       |
 
 <a name="sym"></a>
 
@@ -1440,10 +1463,10 @@ Params object: {
  main <true|false> (Use as the main chart)
 }
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>\*</code> | Something, depends on arg variation |
-| y | <code>\*</code> | Something, depends on arg variation |
+| Param | Type            | Description                         |
+| ----- | --------------- | ----------------------------------- |
+| x     | <code>\*</code> | Something, depends on arg variation |
+| y     | <code>\*</code> | Something, depends on arg variation |
 
 <a name="tan"></a>
 
@@ -1452,9 +1475,9 @@ Tangent function
 
 **Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>number</code> | The variable |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| x     | <code>number</code> | The variable |
 
 <a name="tr"></a>
 
@@ -1464,8 +1487,8 @@ True Range
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
+| Param  | Type            | Description        |
+| ------ | --------------- | ------------------ |
 | fixnan | <code>TS</code> | <code>false</code> | Fix NaN values |
 
 <a name="tsi"></a>
@@ -1476,11 +1499,11 @@ True strength index
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
+| Param | Type                | Description  |
+| ----- | ------------------- | ------------ |
+| src   | <code>TS</code>     | Input        |
 | short | <code>number</code> | Short length |
-| long | <code>number</code> | Long length |
+| long  | <code>number</code> | Long length  |
 
 <a name="vwma"></a>
 
@@ -1490,10 +1513,10 @@ Volume Weighted Moving Average
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | length      |
 
 <a name="weekofyear"></a>
 
@@ -1503,8 +1526,8 @@ Week of year, literally
 **Kind**: global function
 **Returns**: <code>number</code> - - Week
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                            |
+| ------ | ------------------- | -------------------------------------- |
 | [time] | <code>number</code> | Time in ms (current t, if not defined) |
 
 <a name="wma"></a>
@@ -1515,10 +1538,10 @@ Weighted moving average
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| src | <code>TS</code> | Input |
-| len | <code>number</code> | length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| src   | <code>TS</code>     | Input       |
+| len   | <code>number</code> | length      |
 
 <a name="wpr"></a>
 
@@ -1528,9 +1551,9 @@ Williams %R
 **Kind**: global function
 **Returns**: <code>TS</code> - - New time-series
 
-| Param | Type | Description |
-| --- | --- | --- |
-| len | <code>number</code> | length |
+| Param | Type                | Description |
+| ----- | ------------------- | ----------- |
+| len   | <code>number</code> | length      |
 
 <a name="year"></a>
 
@@ -1540,6 +1563,6 @@ Year
 **Kind**: global function
 **Returns**: <code>number</code> - - Year
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type                | Description                            |
+| ------ | ------------------- | -------------------------------------- |
 | [time] | <code>number</code> | Time in ms (current t, if not defined) |

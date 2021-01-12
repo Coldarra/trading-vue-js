@@ -373,7 +373,7 @@ Every time `update()` is called your aggregation function gets all data data poi
 
 ## Script execution modes
 
-Scripts can be executed differently: https://github.com/tvjsx/trading-vue-js/tree/master/docs/api#script-settings
+Scripts can be executed differently: https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api#script-settings
 
 Let's improve the example in **Meta constants**:
 

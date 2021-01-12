@@ -6,7 +6,7 @@ This guide's version is **1.0.0**
 
 As the title says, this guide is for OGs, meaning you'll need to have some experience with the project and Vue.js.
 
-**The 101 guide**: https://github.com/tvjsx/trading-vue-js/tree/master/docs/guide
+**The 101 guide**: https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/guide
 
 **The app for testing**: https://github.com/tvjsx/trading-vue-101
 
@@ -146,7 +146,7 @@ init() {
 
 Simply put, it's a rendering function with a bunch of Canvas API calls (https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API).
 
-You can use standard lines, rectangles and images, to name a few. To get screen coordinates from time & price data points use the layout mapping functions (https://github.com/tvjsx/trading-vue-js/tree/master/docs/api#mapping-functions):
+You can use standard lines, rectangles and images, to name a few. To get screen coordinates from time & price data points use the layout mapping functions (https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api#mapping-functions):
 
 ```js
 draw(ctx) {
@@ -177,7 +177,7 @@ overlays.forEach(l => {
 })
 ```
 
-As you can see all layers sorted by z-indices before rendering, the corresponding settings described here: https://github.com/tvjsx/trading-vue-js/tree/master/docs/overlays#general-settings.
+As you can see all layers sorted by z-indices before rendering, the corresponding settings described here: https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/overlays#general-settings.
 
 ## Use For
 
@@ -189,7 +189,7 @@ use_for() {
 }
 ```
 
-If you create an OV using one of the built-ins types (https://github.com/tvjsx/trading-vue-js/tree/master/docs/overlays), it will overwrite them. Similarly, elements with bigger indices in the `overlays` array will be used instead of the previous ones (assuming the same type):
+If you create an OV using one of the built-ins types (https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/overlays), it will overwrite them. Similarly, elements with bigger indices in the `overlays` array will be used instead of the previous ones (assuming the same type):
 
 ```html
 <template>
@@ -301,7 +301,7 @@ export default {
 }
 ```
 
-After that, the tool will be automatically registered in [DataCube](https://github.com/tvjsx/trading-vue-js/tree/master/docs/datacube) every time the overlay is created.
+After that, the tool will be automatically registered in [DataCube](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/datacube) every time the overlay is created.
 As mentioned earlier, with imported `Tool` mixin you can create **Pins** inside the `init()` method:
 
 ```js
@@ -348,7 +348,7 @@ computed: {
 }    
 ```
 
-You can also use a predefined primitives, which can be imported as `import primitives form 'trading-vue-js'`. (the source codes are here:  https://github.com/tvjsx/trading-vue-js/tree/master/src/components/primitives)
+You can also use a predefined primitives, which can be imported as `import primitives form 'trading-vue-js'`. (the source codes are here:  https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/src/components/primitives)
 
 ### Tool Descriptor
 
@@ -388,7 +388,7 @@ Modifications aka `mods`, overwrite the generic descriptor fields for a specific
 * LineTool:Extended
 * LineTool:Ray
 
-Also, when you drawing a tool there may be a need for some kind of initial setup (color, line thickness, etc). For this purpose there is a field in the [DataStructure](https://github.com/tvjsx/trading-vue-js/tree/master/docs/api#data-structure) called `tools`:
+Also, when you drawing a tool there may be a need for some kind of initial setup (color, line thickness, etc). For this purpose there is a field in the [DataStructure](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api#data-structure) called `tools`:
 
 ```json
 {
@@ -517,7 +517,7 @@ calc() {
 
 ### Using Datasets
 
-For some cases where you need to use multiple data sources or the output of an overlay looks completely different than the source data, there are **datasets**. Dataset is an element of [DataStructure](https://github.com/tvjsx/trading-vue-js/tree/master/docs/api#data-structure) that is completely invisible to the rendering engine, but can be accessed from scripts. Also, it can be updated with DC as a regular overlay.
+For some cases where you need to use multiple data sources or the output of an overlay looks completely different than the source data, there are **datasets**. Dataset is an element of [DataStructure](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api#data-structure) that is completely invisible to the rendering engine, but can be accessed from scripts. Also, it can be updated with DC as a regular overlay.
 
 *[A fragment from the DC example](https://github.com/tvjsx/trading-vue-js/blob/master/test/tests/DataHelper.vue)*
 

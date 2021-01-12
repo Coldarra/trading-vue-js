@@ -28,7 +28,7 @@ By default TVJS uses time as the x-coordinate. For candlestick charts like BTCUS
 
 
 The solution is to use the candle index instead of time, so the gaps are collapsed.
-You can enable the index-based mode in the TVJS [props](https://github.com/tvjsx/trading-vue-js/tree/master/docs/api#props) or in your data:
+You can enable the index-based mode in the TVJS [props](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api#props) or in your data:
 
 ```js
 "chart": {
@@ -60,7 +60,7 @@ Yes,
 
 ## Can I change how candles / built-in overlays look?
 
-Big YES, the most legit way is to create your custom overlay and include it into the lib: [Getting Started Guide](https://github.com/tvjsx/trading-vue-js/tree/master/docs/guide#getting-started)
+Big YES, the most legit way is to create your custom overlay and include it into the lib: [Getting Started Guide](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/guide#getting-started)
 
 ## What does Inline Shader mean?
 
@@ -68,7 +68,7 @@ It's an arrow function emitted from your overlay to draw stuff on top of Bottom 
 
 ## What the hell is DC ?
 
-DC === [DataCube](https://github.com/tvjsx/trading-vue-js/tree/master/docs/datacube#datacube-api), it's a part of the project for dealing with data (the library itself is only a rendering engine). Also it can handle the internal events, e.g. it should be included in order to use the toolbar.
+DC === [DataCube](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/datacube#datacube-api), it's a part of the project for dealing with data (the library itself is only a rendering engine). Also it can handle the internal events, e.g. it should be included in order to use the toolbar.
 
 ## Can I set my custom timeframe instead of the auto-detected?
 

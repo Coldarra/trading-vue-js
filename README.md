@@ -40,7 +40,7 @@ If you create trading software - this lib is probably for you. If you like to ma
 
 ## Demo & Docs
 
-### [Demo](https://tvjsx.github.io/trading-vue-demo/) | [Getting Started](https://github.com/tvjsx/trading-vue-js/tree/master/docs/guide) | [API Book](https://github.com/tvjsx/trading-vue-js/tree/master/docs/api#api-book) | [Built-in Overlays](https://github.com/tvjsx/trading-vue-js/tree/master/docs/overlays#built-in-overlays) | [Examples](https://github.com/tvjsx/trading-vue-js/tree/master/test/tests) | [101 Project](https://github.com/tvjsx/trading-vue-101) | [llll Gitter](https://gitter.im/Trading-Vue-js) | [FAQ](https://github.com/tvjsx/trading-vue-js/tree/master/docs/faq) | [FREE Overlay Pack](https://github.com/tvjsx/tvjs-overlays) | [Free XP Pack](https://github.com/tvjsx/tvjs-xp) | [Playground](https://tvjs.io/play)
+### [Demo](https://tvjsx.github.io/trading-vue-demo/) | [Getting Started](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/guide) | [API Book](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api#api-book) | [Built-in Overlays](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/overlays#built-in-overlays) | [Examples](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/test/tests) | [101 Project](https://github.com/tvjsx/trading-vue-101) | [llll Gitter](https://gitter.im/Trading-Vue-js) | [FAQ](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/faq) | [FREE Overlay Pack](https://github.com/tvjsx/tvjs-overlays) | [Free XP Pack](https://github.com/tvjsx/tvjs-xp) | [Playground](https://tvjs.io/play)
 
 *To run the examples, download the repo & `npm run test`*
 
@@ -107,7 +107,7 @@ PRO TIP: **chart** is mandatory if you want to see something other than a white 
 
 IMPORTANT: All data must be sorted by time (in ascending order). The main OHLCV must not contain duplicate timestamps.
 
-[Full version of DataStructure](https://github.com/tvjsx/trading-vue-js/tree/master/docs/api#data-structure-new)
+[Full version of DataStructure](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api#data-structure-new)
 
 ```js
 {

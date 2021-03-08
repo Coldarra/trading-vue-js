@@ -92,8 +92,8 @@ export default {
 Sets custom time range.
 设置自定义时间范围。
 
-* **Arguments**: t1 (Number) Left-bound of the range
-* **Arguments**: t2 (Number) Right-bound of the range
+* **Arguments**: t1 (Number) Left-bound of the range | Index (in IB mode)
+* **Arguments**: t2 (Number) Right-bound of the range | Index (in IB mode)
 
 *Example:*
 
@@ -125,7 +125,7 @@ Gets current timerange.
 Goto to a specific timestamp
 转到特定时间戳
 
-* **Arguments**: t (Number) Target timestamp
+* **Arguments**: t (Number) Target timestamp | Index (in IB mode)
 
 ### getCursor()
 

@@ -269,15 +269,16 @@ export default {
             // TODO: limit goto & setRange (out of data error)
             if (this.chart_props.ib) {
                 const ti_map = this.$refs.chart.ti_map
-                t = ti_map.smth2i(t)
+                t = ti_map.gt2i(t, this.$refs.chart.ohlcv)
             }
             this.$refs.chart.goto(t)
         },
         setRange(t1, t2) {
             if (this.chart_props.ib) {
                 const ti_map = this.$refs.chart.ti_map
-                t1 = ti_map.smth2i(t1)
-                t2 = ti_map.smth2i(t2)
+                const ohlcv = this.$refs.chart.ohlcv
+                t1 = ti_map.gt2i(t1, ohlcv)
+                t2 = ti_map.gt2i(t2, ohlcv)
             }
             this.$refs.chart.setRange(t1, t2)
         },

@@ -33,6 +33,7 @@ export default class ScriptStd {
                 case 'constructor':
                 case 'ts':
                 case 'tstf':
+                case 'sample':
                 case '_index_tracking':
                 case '_tsid':
                 case '_i':
@@ -125,6 +126,27 @@ export default class ScriptStd {
             ts.__id__ = _id
             ts.__tf__ = u.tf_from_str(tf)
             ts.__fn__ = Sampler('close').bind(ts)
+        } else {
+            ts.__fn__(x)
+        }
+        return ts
+    }
+
+    /**
+     * Creates a new custom sampler.
+     * Return the an array. Id is auto-genrated
+     * @param {*} x - A variable to sample from
+     * @param {string} type - Sampler type
+     * @param {(number|string)} tf - Timeframe in ms or as a string
+     * @return {TS} - New time-series
+     */
+    sample(x, type, tf, _id) {
+        let ts = this.env.tss[_id]
+        if (!ts) {
+            ts = this.env.tss[_id] = [x]
+            ts.__id__ = _id
+            ts.__tf__ = u.tf_from_str(tf)
+            ts.__fn__ = Sampler(type).bind(ts)
         } else {
             ts.__fn__(x)
         }

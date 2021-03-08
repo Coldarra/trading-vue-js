@@ -7,14 +7,17 @@ This guide's version is **1.0.0**
 ## What
 
 TVJS Scripts is a time-series engine, similar to the tradingview's PINE script. Syntax is based on javascript, in the future it will be possible to make custom code constructions with regular expressions (extend the language).
+TVJS脚本是一个时间序列引擎，类似于tradingview的PINE脚本。语法是基于javascript的，将来有可能用正则表达式进行自定义代码构造（扩展语言）。
 
 ## State
 
 At this moment 90% of the features are completed.
+目前，90%的功能已完成。
 
 ## Core concepts
 
 **Timeseries (TS)** is a regular js Array with `__id__` and `__len__` properties (id & buffer length). New elements are added at the beginning of the TS:
+**Timeseries（TS）**是一个常规js数组，具有`__id__`和`__len__`属性（id和缓冲区长度）。在TS开头添加新元素：
 
 ```js
 -> [2, 2, 2, 2, 2, 2]

@@ -17,7 +17,7 @@ this.chart = new DataCube({
 When you create a new dataset, its data is sent to the web-worker and immediately deleted from the structure (we don't need Vue to sniff out its existence).
 After you added the initial dataset object, the reference will appear in `dss`:
 创建一个新的数据集时，数据被发送到 web worker，并立即从结构中删除（不需要 Vue 来感知数据变动）。
-初始化数据集对象后，它将会被引用在“dss”中：
+初始化数据集对象后，它将会被引用在`dss`中：
 
 ```js
 dc.dss["binance-btcusdt"]; // => Dataset {...}
@@ -28,7 +28,7 @@ dc.dss["binance-btcusdt"]; // => Dataset {...}
 ### set(data, exec = true)
 
 Sets new data array (overwrites it) in web worker.
-在 web worker 中设置新的数据数组（覆盖原数据）。
+在 web worker 中设置新的数据（覆盖原数据）。
 
 - **Arguments**: data (Data array)
 - **Arguments**: exec (Exec the scripts, default = true)

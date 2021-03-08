@@ -10,7 +10,7 @@ This guide version is **1.0.0**
 <dl>
 <dt><a href="#ts">ts(x)</a> ⇒ <code>TS</code></dt>
 <dd><p>Creates a new time-series &amp; records each x.
-Returns  an array. Id is auto-genrated</p>
+Returns an array. Id is auto-genrated</p>
 </dd>
 <dt><a href="#tstf">tstf(x, tf)</a> ⇒ <code>TS</code></dt>
 <dd><p>Creates a new time-series &amp; records each x.

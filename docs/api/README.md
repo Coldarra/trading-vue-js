@@ -524,7 +524,7 @@ Override if you need them.
 #### use_for()
 
 * **Returns**: list of indicator types which this overlay can draw. **Required**
-* **返回**：此覆盖图层可以绘制多个指标。**必需的**
+* **返回**：此覆盖图层可以绘制的指标列表。**必需的**
 The best practice is to include a generic type first and then a specific, e.g.
 最好是先包含泛型类型，然后包含特定类型，例如。
 

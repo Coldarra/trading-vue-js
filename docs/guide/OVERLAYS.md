@@ -5,6 +5,7 @@ This guide's version is **1.0.0**
 ![npm](https://img.shields.io/npm/v/trading-vue-js.svg?color=brightgreen&label=Current%20lib%20version)
 
 As the title says, this guide is for OGs, meaning you'll need to have some experience with the project and Vue.js.
+正如标题所说，本指南是为OGs编写的，您需要有一些vue.js项目和应用程序经验
 
 **The 101 guide**: https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/guide
 
@@ -19,12 +20,19 @@ As the title says, this guide is for OGs, meaning you'll need to have some exper
 * Basic knowledge of canvas API
 * Some experience with the lib (DataCube, overlays)
 * Brief introduction to scripts
+* 知道如何在npm环境下构建基于webpack的项目
+* 了解什么是Vue组件（方法、道具等）
+* Canvas API基础知识
+* 使用lib（DataCube、Overlays）的一些经验
+* 脚本
 
 ## What is Overlays?
 
 Basically, overlays are Vue components without the render function or template. Well, actually there is a render function called `draw()`, but it is used by the library and not directly by Vue.js.
+基本上，覆盖图层是没有渲染功能或模板的Vue组件。实际上，有一个渲染函数叫做`draw()`，但它是由lib使用的，而不是由Vue.js直接调用
 
 When you add new overlay (OV) to your data object, e.g.:
+向数据对象添加新覆盖图层（OV）时，例如：
 
 ```js
 onchart: [{
@@ -36,12 +44,15 @@ onchart: [{
 ```
 
 the core lib searches among registered OVs for the type `OverlayKing` and creates the corresponding component.
+核心库在已注册的OVs中搜索类型`OverlayKing`，并创建相应的组件。
 
 It's important to note that overlays are somewhat similar to shaders, they only see a subset of the time-series data (the visible range), so performance is optimal. You'll learn how to access all available data if needed further.
+需要注意的是，覆盖图层有点类似于着色器，它们只能看到时间序列数据的子集（可见范围），因此性能是最佳的。如果需要，您可以学习如何访问所有可用数据。
 
 ## Null Overlay
 
 Let's create an invisible overlay with all available methods:
+让我们用所有可用的方法创建一个不可见的覆盖：
 
 `Ghost.vue`
 ```html
@@ -96,10 +107,12 @@ export default {
 ```
 
 If you add this overlay into the **trading-vue-101** app, you'll see absolutely nothing. Well, that was expected. In the next sections you'll learn how to fill it with tons of code and make it do at least something (no, it won't trade on your behalf... Or maybe it will? Let's find out).
+如果把这个覆盖图层添加到**trading-vue-101**应用程序中，你完全看不到任何东西。这是意料之中的。接下来您将学习如何用代码填充图层）。
 
 ## Meta Info
 
 The meta object should be used to add an arbitrary data, such as a github repo address or website of the creator. However it includes several reserved/required fields. For example:
+meta对象应用于添加任意数据，例如github repo地址或创建者的网站。但是，它包含几个保留/必需字段。例如：
 
 ```js
 meta_info() {
@@ -115,6 +128,7 @@ meta_info() {
 ```
 
 Preset can define an initial set of parameters for the OV. The **legend-bittons** extension (https://github.com/tvjsx/tvjs-xp) supports them through the `+` button:
+预设可以为OV定义一组初始参数。**legend bittons**扩展通过“+”按钮支持：
 
 ```js
 preset: {
@@ -518,6 +532,7 @@ calc() {
 ### Using Datasets
 
 For some cases where you need to use multiple data sources or the output of an overlay looks completely different than the source data, there are **datasets**. Dataset is an element of [DataStructure](https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/api#data-structure) that is completely invisible to the rendering engine, but can be accessed from scripts. Also, it can be updated with DC as a regular overlay.
+在某些情况下，如果需要使用多个数据源或覆盖的输出看起来与源数据完全不同，则有**数据集**。数据集可以从脚本访问。此外，它可以用DC作为常规覆盖进行更新。
 
 *[A fragment from the DC example](https://github.com/tvjsx/trading-vue-js/blob/master/test/tests/DataHelper.vue)*
 
@@ -570,6 +585,7 @@ update: `
 ```
 
 A dataset plus sampler can also be used to create the main chart from trades:
+dataset plus采样器也可用于根据交易创建主图表：
 
 ```js
 // Will fill the main chart `data` array
@@ -579,6 +595,7 @@ init: `
 ```
 
 By default the trades dataset must have the following format:
+默认情况下，交易数据集必须具有以下格式：
 
 ```json
 [
@@ -589,6 +606,7 @@ By default the trades dataset must have the following format:
 ```
 
 Alternatively, the format can be changed (where `:` is an element separator):
+或者，可以更改格式（其中`:`是元素分隔符）：
 
 ```js
 init: `
@@ -599,8 +617,10 @@ init: `
 ### Live trading
 
 The main question: can an overlay be a fully-functional trading program? The answer is **yes**! You can make a fully functional trading bot with overlay only. Of course, if you prefer to handle trading signals in your app, you can do that too.
+主要的问题是：叠加能否成为一个功能齐全的交易程序？答案是**是**！你可以只做一个功能齐全的自动交易叠加图层。当然，如果你喜欢在应用程序中处理交易信号，你也可以这样做。
 
 As always, an example will explain it better. What strategy shall we use? You guessed it right:
+一如既往，举个例子可以更好地解释这一点。我们应该用什么策略？你猜对了：
 
 *ema_crossover.vue*
 
@@ -680,7 +700,12 @@ export default {
 ## Pro Tips
 
 * If you want to get crispy pixel-perfect lines, try to add/subtract 0.5 from px coordinates.
+* 如果你想得到清晰的像素完美线条，试着把坐标加/减0.5像素。
 * Combining primitives with the same style into one path will speed-up the overlay.
+* 将具有相同样式的覆盖图层组合到一起可以加快速度。
 * Sometimes you need to quickly prototype an overlay, http://tvjs.io/play is the place to go
+* 有时你需要快速的建立覆盖模型，http://tvjs.io/play是个好去处
 * You can pre-render repetitive drawing calls with [OffscreenCanvas](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas)
+* 可以使用OffscreenCanvas预渲染重复的图形调用
 * To make direct requests to exchange from Vue.js, wrap it into [Electron](https://www.electronjs.org/)
+* 打包为Electron

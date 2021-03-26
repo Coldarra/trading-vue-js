@@ -22,6 +22,18 @@ If you create trading software - this lib is probably for you. If you like to ma
 <br>
 
 <div align="center">
+<br>
+  <a href="https://discord.gg/wrXCN6ysgW"> <img src="https://raw.githubusercontent.com/tvjsx/trading-vue-js/master/assets/README-06bc5a15.png" alt="trading-vue logo"></a>
+</div>
+
+
+## Why
+
+If you create trading software - this lib is probably for you. If you like to make custom indicators and think out of the box - this lib is most likely for you. And if you miss usability of [TradingView.com](https://www.tradingview.com) in other open-source libraries and can't stand it - you are definetly in the right place!
+
+<br>
+
+<div align="center">
     <img width="720" heigth="420" src="https://github.com/tvjsx/trading-vue-js/blob/master/assets/V1.gif?raw=true" alt="White preview">
 </div>
 

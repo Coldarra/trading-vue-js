@@ -5,7 +5,7 @@ This guide's version is **1.0.0**
 ![npm](https://img.shields.io/npm/v/trading-vue-js.svg?color=brightgreen&label=Current%20lib%20version)
 
 As the title says, this guide is for OGs, meaning you'll need to have some experience with the project and Vue.js.
-正如标题所说，本指南是为OGs编写的，您需要有一些vue.js项目和应用程序经验
+正如标题所说，本指南是为大佬编写的，您需要有一些vue.js项目和应用程序经验
 
 **The 101 guide**: https://coldarra.coding.net/public/trading-vue-js/trading-vue-js/git/files/master/docs/guide
 

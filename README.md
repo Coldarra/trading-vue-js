@@ -6,7 +6,7 @@
 # TradingVue.js ![npm](https://img.shields.io/npm/v/trading-vue-js.svg?color=brightgreen&label=version) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![build](https://img.shields.io/badge/build-passing-brightgreen.svg) ![size](https://img.shields.io/github/size/tvjsx/trading-vue-js/dist/trading-vue.min.js.svg) [![Gitter](https://badges.gitter.im/Trading-Vue-js/community.svg)](https://gitter.im/Trading-Vue-js/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![DONATE](https://img.shields.io/badge/฿-Donate-f7921b.svg)](https://github.com/tvjsx/trading-vue-js/blob/master/DONATION.md)
 
 **TradingVue.js** is a hackable charting lib for traders. You can draw literally ANYTHING on top of candlestick charts.
-**TradingVue.js文件**是一个为交易者提供的可破解的图表库。你可以在K线图上画任何东西。
+**TradingVue.js** 是一个为交易者提供的可破解的图表库。你可以在K线图上画任何东西。
 
 <div align="center">
 <br>
@@ -18,6 +18,7 @@
 
 If you create trading software - this lib is probably for you. If you like to make custom indicators and think out of the box - this lib is most likely for you. And if you miss usability of [TradingView.com](https://www.tradingview.com) in other open-source libraries and can't stand it - you are definetly in the right place!
 
+如果你在创建交易软件，如果你喜欢自定义指标，如果希望开箱即用，那这个库就是是为你准备的。如果你无法忍受错过了[TradingView.com](https://www.tradingview.com)在其他开源库中的可用性，那么你找对地方了！
 <br>
 
 <div align="center">
